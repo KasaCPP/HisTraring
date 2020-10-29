@@ -1,0 +1,13 @@
+C:\TEMP\C#WorkSpace\HIS\bin\Debug\HIS.exe.config
+C:\TEMP\C#WorkSpace\HIS\bin\Debug\HIS.exe
+C:\TEMP\C#WorkSpace\HIS\bin\Debug\HIS.pdb
+C:\TEMP\C#WorkSpace\HIS\obj\Debug\HIS.csprojAssemblyReference.cache
+C:\TEMP\C#WorkSpace\HIS\obj\Debug\HIS.index.resources
+C:\TEMP\C#WorkSpace\HIS\obj\Debug\HIS.Properties.Resources.resources
+C:\TEMP\C#WorkSpace\HIS\obj\Debug\HIS.csproj.GenerateResource.cache
+C:\TEMP\C#WorkSpace\HIS\obj\Debug\HIS.csproj.CoreCompileInputs.cache
+C:\TEMP\C#WorkSpace\HIS\obj\Debug\HIS.exe
+C:\TEMP\C#WorkSpace\HIS\obj\Debug\HIS.pdb
+C:\TEMP\C#WorkSpace\HIS\bin\Debug\Newtonsoft.Json.dll
+C:\TEMP\C#WorkSpace\HIS\bin\Debug\Newtonsoft.Json.xml
+C:\TEMP\C#WorkSpace\HIS\obj\Debug\HIS.csproj.CopyComplete
