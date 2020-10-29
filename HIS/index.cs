@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Security.Cryptography;
@@ -28,20 +29,26 @@ namespace HIS
             MD5 m = MD5.Create();
             byte[] buffer = Encoding.Default.GetBytes(password);
             byte[] md5buffer = m.ComputeHash(buffer);
-            string str = null;
+            string passMd5 = null;
             foreach (byte b in md5buffer) 
             {
-                str += b.ToString("x2");
+                passMd5 += b.ToString("x2");
             }
-            List<User> loginList = new List<User>();
+            List<packaging> loginList = new List<packaging>();
             User login = new User()
             {
                 id = user,
-                passwords = str
+                passwords = passMd5
             };
-            loginList.Add(login);
+            packaging packaging = new packaging() 
+            {
+                Function="login",
+                info=login
+            };
+            loginList.Add(packaging);
             string jsonString = JsonConvert.SerializeObject(loginList);
             MessageBox.Show(jsonString);
+            //unit.Connection(jsonString);
         }
 
         private void zk_Click(object sender, EventArgs e)
