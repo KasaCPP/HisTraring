@@ -47,8 +47,18 @@ namespace HIS
             };
             loginList.Add(packaging);
             string jsonString = JsonConvert.SerializeObject(loginList);
-            MessageBox.Show(jsonString);
-            //unit.Connection(jsonString);
+            //MessageBox.Show(jsonString);
+            var serviceBack = unit.getService(jsonString);
+            if (serviceBack !=null && serviceBack.Length > 1)
+            {
+                Work work = new Work();
+                work.ShowDialog(this);
+                this.Close();
+            }
+            else 
+            {
+                MessageBox.Show("登录失败！");
+            }
         }
 
         private void zk_Click(object sender, EventArgs e)
